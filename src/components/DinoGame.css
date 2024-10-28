@@ -1,0 +1,74 @@
+.game-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .score-container {
+    text-align: right;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .game-area {
+    position: relative;
+    height: 300px;
+    border-bottom: 2px solid #333;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 40px;
+    height: 60px;
+    background-color: #333;
+    transition: transform 0.1s;
+  }
+  
+  .obstacle {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    background-color: #666;
+  }
+  
+  .game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .restart-button:hover {
+    background-color: #444;
+  }
+  
+  .start-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+  }
